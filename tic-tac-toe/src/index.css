@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+   sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html{
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+main{
+	display: block;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+	z-index: -1;
+}
+.row {
+	display: inline-block;
+}
+.col-4 {
+	width: 33.33%;
+	height: 100%;
+	float: left;
+}
+.square-btn {
+	width: 10vmin;
+	height:	10vmin;
+	font-size: 300%;
+	float: left;
+	text-align: center;
+	background: none;
+	border: 1px solid black;
+	color: #0066cc;
+}
+.game-status {
+	margin-top: 8%;
+	text-align: center;
+	font-size: 200%;
+	font-weight: bolder;
+}
+.game-info {
+	margin-left: 33.33%;
+	width: 33.33%; 	
+}
+.game-info > ul {
+	list-style-type: none;
+}
+.game-info > ul > li {
+	margin-bottom: 1%;
+}
+.game-info > ul > li > button {
+	background: none;
+	font-size: 100%;
+	border: 1px solid black;
+	border-radius: 5%/20%;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ 	
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
