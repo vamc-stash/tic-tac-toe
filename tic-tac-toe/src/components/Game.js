@@ -98,11 +98,13 @@ class Game extends Component {
   }
 
   return (
-   <div className="App">
+   <div className="App-header">
    <div className="game-status">
    {status}
    </div>
+   <div className="game-board">
    <ButtonPanel matrix={current.matrix} onClick={this.handleClick} winnerPattern={winnerPattern}/>
+   </div>
    <div className="game-info">
    <ul>{moves}</ul>
    </div>

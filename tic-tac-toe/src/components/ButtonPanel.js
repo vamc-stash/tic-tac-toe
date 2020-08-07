@@ -7,12 +7,11 @@ class ButtonPanel extends Component {
 		let myStyle;
 		if(this.props.winnerPattern && this.props.winnerPattern.includes(i)) {
 			myStyle = {
-				backgroundColor: '#0066cc',
 				color: 'white'
 			}
 		}
 
-		return <Button className="col-4" style={myStyle} value={this.props.matrix[i]} onClick={()=>this.props.onClick(i)}/>
+		return <Button style={myStyle} value={this.props.matrix[i]} onClick={()=>this.props.onClick(i)}/>
 	}
 
 	createBoard() {
@@ -21,9 +20,9 @@ class ButtonPanel extends Component {
 		for(let i=0; i<9; i=i+3) {
 			let row = []
 			for(let j=i; j<i+3; j++) {
-				row.push(this.renderButton(j))
+					row.push(<td>{this.renderButton(j)}</td>)
 			}
-			board.push(<div className="row">{row}</div>)
+			board.push(<tr>{row}</tr>)
 		}
 		return board;
 	}
@@ -31,12 +30,10 @@ class ButtonPanel extends Component {
 	render(){
 
 		return(
-		<div className="container">
-		<div className="col-4"></div>
-		<div className="col-4">{this.createBoard()}</div>
-		<div className="col-4"></div>
-		</div>
-		);
+			<table>
+			{this.createBoard()}
+			</table>
+			);
 	}
 }
 
